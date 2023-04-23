@@ -6,6 +6,7 @@
    --addone: #434455;
    --addonehf: #404bbf;
    --sect: #F4F4FD;
+   --newcolor: #e7e9fc;
 
 
 }
@@ -15,6 +16,16 @@
    color: var(--addone);
    background-color: var(--bodyy);
 
+   p, h1, h2, h3, h4, h5 {
+         margin: 0;
+      }
+
+            ul,
+            ol {
+               margin-top: 0;
+               margin-bottom: 0;
+               padding-left: 0;
+            }
 }
 
 .logoone {
@@ -26,6 +37,7 @@
    text-transform: uppercase;
    color: var(--logoone);
    background-color:var(--bodyy); 
+   margin-right: 76px;
 }
 
 .logotwo { 
@@ -39,7 +51,12 @@
 
 .list {
    list-style: none;
+}
 
+
+.nav-list {
+   display: flex;
+   gap: 40px;
 }
 
 .but {
@@ -59,11 +76,9 @@ color: var(--but);
 }
    
    
-
-
 .add {
    font-style: normal;
-
+   margin-left: auto;
 }
 
 .addone {
@@ -81,15 +96,40 @@ color: var(--but);
 color: var(--addonehf);
 }
    
+.headindex {
+   border-bottom: 1px solid var(--newcolor);
+}
+
+.divheadindex {
+   display: flex;
+   align-items: center;
+
+}
+
+.container {
+   width: 1158px;
+   padding-left: 15px;
+   padding-right: 15px;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.navindex {
+   display: flex;
+   align-items: center;
+}
 
 /* Hero */
 
 .hero {
    background-color: var(--logotwo);
-
+   padding-top: 188px;
+   padding-bottom: 188px;
 }
 
-.hhero {
+.herotittle {
    font-size: 56px;
    line-height: 1.07;
    text-align: center;
@@ -107,7 +147,14 @@ color: var(--addonehf);
    letter-spacing: 0.04em;
    color: var(--bodyy);
    cursor: pointer;
-
+   display: block;
+   min-width: 169px;
+   height: 56px;
+   border: none;
+   background-color: var(--logoone);
+   border-radius: 4px;
+   cursor: pointer;
+   margin: auto;
 }
 
 .button:focus {
@@ -118,61 +165,104 @@ color: var(--addonehf);
    background-color: var(--but);
 }
 
+
+
 /* Benefits */
 
-.benefits {}
+.benefits {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
 
-.hbenefits {
+.unreal {
+
+   width: calc((100% - 72px) / 4);
+}
+
+.delete {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   overflow: hidden;
+   clip: auto;
+}
+
+.listtwo {
+   display: flex;
+   gap: 24px;
+}
+
+.benefitstittle {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--logotwo);
+   margin-bottom: 8px;
 }
 
-.text {
+.benefitstext {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: var(--addone);
+   line-height: 1.5;
 
 }
 
 /* What are we doing */
 
-.doing { }
+.doing { 
+   padding-bottom: 120px;
+}
 
-.hdoing {
+.tittledoing {
    font-size: 36px;
    line-height: 1.11;
    text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--logotwo);
+   margin-bottom: 72px;
+}
 
+.doingimage {
+   width: calc((100% - 48px) / 3);
 }
 
 /* Our Team */
 
 .team {
    background-color: var(--sect);
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 
-.hteam {
+.tittleteam {
    font-size: 36px;
    line-height: 1.11;
    text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: #2e2f42;
+   margin-bottom: 72px;
+}
+
+.listourteam {
+   display: flex;
+   gap: 24px;
 }
 
 .listteam {
    background-color: var(--bodyy);
+   width: calc((100% - 72px) / 4);
 
 }
 
-.htextteam {
+.tittletextteam {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
